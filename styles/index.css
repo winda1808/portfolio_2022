@@ -195,4 +195,9 @@ header {
         margin-top: 80px;
     
     }
+
+    .navbar {
+      display: flex;
+      justify-content: space-evenly;
+    }
 }
