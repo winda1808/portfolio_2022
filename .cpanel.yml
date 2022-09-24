@@ -2,5 +2,5 @@
  ---
 deployment:
 tasks:
-- export DEPLOYPATH=/home/winq5475/repositories/portfolio_2022
+- export DEPLOYPATH=/home/winq5475/public_html/
 - /bin/cp -r * $DEPLOYPATH
