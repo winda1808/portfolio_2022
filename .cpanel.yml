@@ -2,4 +2,7 @@
 deployment:
 tasks:
 - export DEPLOYPATH=/home/winq5475/public_html/git
-- /bin/cp -r * $DEPLOYPATH
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp index.css $DEPLOYPATH
+- /bin/cp script.js $DEPLOYPATH
+ - /bin/cp about.html $DEPLOYPATH
