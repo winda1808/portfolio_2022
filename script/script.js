@@ -51,16 +51,16 @@ function getWeather() {
       });
 
      
-
       if (hours < 12) {
         timeElement.innerHTML =`Halo! It's ${hours} : ${minutes}, <br/> Good Morning!`;
       } 
-      if (hours > 18) {
+      if (hours >= 18) {
         timeElement.innerHTML =`Hi! It's ${hours} : ${minutes}, <br/> what was the best part of your day?`;
       } 
       if (hours > 12 && hours < 18) {
         timeElement.innerHTML =`Hello! It's ${hours} : ${minutes}. <br/> Good Day!`;
       } 
+
   }
 
   function error() {
