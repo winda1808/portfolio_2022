@@ -139,8 +139,140 @@ header {
   position: fixed;
 }
 
+.container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .gallery{
+display: block;
+}
+
+.cards-subpage {
+  width: 300px;
+  padding: 5px;
+  color: #fff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 320px;
+  min-width: 240px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+}
+
+.subpage-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards {
+  width: 300px;
+  padding: 5px;
+  color: #fff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 320px;
+  min-width: 240px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.cards * {
+  box-sizing: border-box;
+  transition: all 0.45s ease-in-out;
+}
+
+.cards:before,
+.cards:after {
+  background-color: #CF4023;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+  border-radius: 10px;
+}
+
+.cards img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.cards figcaption {
+  font-family: var(--font-small);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.cards:hover:before,
+.cards:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.cards:hover figcaption {
+  opacity: 1;
+}
+
+figcaption a {
+  text-decoration: none;
+  color: #fff;
+  border: #fff 1px solid;
+  border-radius: 30px;
+  padding: 7px 10px;
+  font-size: 10px;
+}
+
+figcaption a:hover {
+color: #131314;
+}
+
+.image-on-page {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
 .contact-link {
     max-width: 800px;
+}
+
+.small-title {
+  text-align: center;
+  margin: 5px auto;
+  font-size: 10px;
+  font-family: var(--font-small);
+  text-decoration: none;
+  background-color: #CF4023;
+  color: #fff;
+  padding: 5px;
 }
 
 .about {
