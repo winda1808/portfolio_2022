@@ -28,9 +28,7 @@ img {
  }
 
  .gallery{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+display: block;
 }
 
 .cards-subpage {
@@ -125,7 +123,8 @@ img {
 }
 
 .time-lapse video {
-  display: block;
+  display:flex;
+  justify-content: center;
   margin: 0 auto;
   margin-top: 30px;
   max-width: 400px;
@@ -150,15 +149,15 @@ color: #131314;
   margin: 10px auto;
 }
 
-.home-scroll {
-  font-size: 50px;
-  margin: 20px;
+.home-scroll, .back-scroll {
+  font-size: 30px;
+  margin: auto 5px;
   color: #131314;
-  position: relative;
-}
-
-.home-scroll:hover {
-  color: #131314;
+  bottom:5%;
+  right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: fixed;
 }
 
 .social-links, .work-links, .about-links, .gallery-links {
@@ -387,56 +386,7 @@ transition: 0.3s ease;
 border: none;
 }
 
-/*Responsive styles*/
 
-@media (max-width: 900px){
-.product .popup-card{
-flex-direction: column;
-width: 550px;
-height: auto;
-}
-
-.product .popup-card .product-img{
-z-index: 3;
-width: 100%;
-height: 200px;
-transform: translateY(0);
-border-bottom-left-radius: 0;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-}
-
-.product .popup-card .product-img img{
-left: initial;
-max-width: 100%;
-}
-
-.product .popup-card .info{
-width: 100%;
-height: auto;
-padding: 20px;
-border-top-left-radius: 0;
-border-top-right-radius: 0;
-}
-
-.product .popup-card .info h2{
-margin: 20px 5px 5px 5px;
-font-size: 25px;
-}
-
-.product .popup-card .info h2 span{
-font-size: 10px;
-}
-
-.product .popup-card .info p{
-margin: 5px;
-font-size: 13px;
-}
-
-.product .popup-card .close-btn{
-z-index: 4;
-}
-}
     .history {
         max-width: 800px;
         display: block;
@@ -566,5 +516,11 @@ z-index: 4;
     justify-content: center;
     font-size: 9px;
     text-align: center;;
+  }
+
+  .gallery{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
