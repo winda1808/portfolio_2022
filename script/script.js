@@ -1,4 +1,3 @@
-
   let descriptionElement = document.getElementById("description");
   let timeElement = document.getElementById("time");
 
